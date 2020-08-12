@@ -1,0 +1,52 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <title>Chord</title>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/vis.js"></script>
+  
+  <link href="css/vis.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+    #mynetwork {
+      width: 800px;
+      height: 500px;
+      border: 1px solid lightgray;
+    }
+  </style>
+</head>
+<body>
+
+<p>
+  CHORD 
+  Projeto para sistemas distribuidos 
+  Simples uso, no projeto tem um txt com 40 musicas, basta add e desfrutar o projeto 
+  Lembre-se para pesquisa por nome utilize de forma igual ao da lista
+</p>
+<p id="output" style="color:red">
+    
+</p>
+<div id="mynetwork"></div>
+
+
+    
+<input type="file" name="file" id="file">
+<p></p>
+<script type="text/javascript" src="js/main.js"></script>
+<input id="add"> 
+<button id="add_node" onclick="addnode(document.getElementById('add').textContent);">ADD NODE</button> 
+<p></p>
+<button id="del_node" onclick="delnode();" >DELETE NODE</button>
+<input id="to_delete"> 
+
+<p></p>
+
+<button id="lookup_data" onclick="lookupdata();" >LOOKUP KEY</button>
+<input id="to_lookup" > 
+<p></p>
+<button id="lookup_dataName" onclick="lookupdataName();" >LOOKUP Name</button>
+<input id="to_lookupName" > 
+</body>
+</html>
